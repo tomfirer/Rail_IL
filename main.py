@@ -12,5 +12,5 @@ def search_rail():
     start_time = str(request.args.get('startTime'))
     end_destination = str(request.args.get('endStop'))
     return subprocess.check_output(
-        ["java", "-classpath", "/home/afeka/Desktop/sprint3/Rails_IL/bin", "Rails_IL/UserMain", start_destination, start_time,
+        ["java", "-classpath", "/home/afeka/workspace/Rails_IL/bin", "Rails_IL/UserMain", start_destination, start_time,
          end_destination])
